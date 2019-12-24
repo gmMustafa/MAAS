@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/panelAdminColor"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Room"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageButton
+        android:id="@+id/toolbar_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/edit_icon" />
+
+    <TextView
+        android:id="@+id/room_no_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_below="@id/toolbar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Room No:"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/room_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/room_no_t"
+        android:layout_below="@id/room_no_t"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Room"
+        android:textSize="15sp"></TextView>
+
+
+    <Button
+        android:id="@+id/deleteRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_et"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/admin_btn"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

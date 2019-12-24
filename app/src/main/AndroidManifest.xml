@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmtech.hp.schoolmanagmentsystem">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gmtech.hp.schoolmanagmentsystem.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+
+        <activity
+
+            android:name=".StartUpPackage.SelectionLogin"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StartUpPackage.Splash"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StartUpPackage.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AdminDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.SchoolListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowStudentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowSubjectList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowRoomList"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddSchool"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddStudent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddRoom"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddSubject"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddHoldiay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowStudentDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowStudnetCourses"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowStudnetCoursesToAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowSectionOfSelectedCourseStudent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.EditStudent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowTeachersList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowTeacherDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowTeacherCourses"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowTeacherCoursesToAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowSectionOfSelectedCourseTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.EditTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.HolidaysActivities"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowRoomDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowSubjectDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.EditRoom"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.EditSubject"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddAdmin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowAdminDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.EditAdmin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowClasses"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowClassesSubjects"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowSubjectSections"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowClassAssignDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AddSection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AttandenceSelectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.ShowAttendenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".AdminModule.Activities.AttendenceCalenderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.StudentDashBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.SM_ShowStudnetCourses"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.SM_ShowReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.ShowStudentNotificationslist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.ShowNotificationDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".StudentModule.SM_Activities.StudentAttanaceShow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.ActivityTeacherDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdStudentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdStudentShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdShowStudentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdStudentCalenderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdStudentAttendenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdAttendenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdMarkAttendenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdNotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdShowNotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.AddNotifictaionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdShowNotificationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.EditNotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdAssignmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdShowAssignmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdShowAssignmentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.EditAssignmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.AddAssignmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.ShowStudnetReportToTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.getBackUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:launchMode="singleTask"
+            android:name=".TeacherModule.TM_Activities.TdAddMarkdActivity"
+            android:screenOrientation="portrait"
+             android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+    </application>
+    <!--           -->
+</manifest>

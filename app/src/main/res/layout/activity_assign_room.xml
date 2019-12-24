@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/panelAdminColor"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ttile"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/room_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Class Time : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_below="@id/toolbar"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/room_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/room_tv"
+        android:layout_alignLeft="@id/room_tv"
+        android:inputType="time"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Class Room : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/room_tv"
+        android:layout_below="@id/room_et"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/add_teacher_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/startTime"
+        android:inputType="number"
+        android:layout_alignLeft="@id/startTime"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/room_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Section : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/add_teacher_mobile"
+        android:layout_below="@id/add_teacher_mobile"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/room_tv"
+        android:inputType="text"
+        android:layout_alignLeft="@id/room_tv"
+        >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_btn"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_btn"
+            android:text="Save"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

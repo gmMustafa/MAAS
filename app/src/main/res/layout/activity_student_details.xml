@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/panelAdminColor"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Student Details"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/student_details_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/edit_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/student_details_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbar"
+        android:layout_alignLeft="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/student_details_name_show_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Student Name"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/student_details_name_tv"
+        android:layout_alignLeft="@id/student_details_name_tv"
+        />
+
+    <TextView
+        android:id="@+id/student_details_gender_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Gender : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/student_details_name_show_tv"
+        android:layout_alignLeft="@+id/student_details_name_show_tv"
+        />
+
+    <TextView
+        android:id="@+id/student_details_gender_show_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Male"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/student_details_gender_tv"
+        android:layout_alignLeft="@id/student_details_gender_tv"
+        />
+
+
+    <TextView
+        android:id="@+id/student_details_class_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Class : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/student_details_gender_show_tv"
+        android:layout_alignLeft="@+id/student_details_gender_show_tv"
+        />
+
+    <TextView
+        android:id="@+id/student_details_class_show_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="1"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/student_details_class_tv"
+        android:layout_alignLeft="@id/student_details_class_tv"
+        />
+
+    <TextView
+        android:id="@+id/student_details_mobile_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Mobile : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/student_details_class_show_tv"
+        android:layout_alignLeft="@+id/student_details_class_show_tv"
+        />
+
+    <TextView
+        android:id="@+id/student_details_mobile_show_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="03331234567"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/student_details_mobile_tv"
+        android:layout_alignLeft="@id/student_details_mobile_tv"
+        />
+
+
+    <Button
+        android:id="@+id/courses_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_details_mobile_show_tv"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/admin_btn"
+        android:text="Courses"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/deleteStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courses_btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/admin_btn"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="onClick"/>
+
+
+
+</RelativeLayout>

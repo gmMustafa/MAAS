@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MAAS </string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="classes_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <string-array name="assignment_type">
+        <item>Assignment</item>
+        <item>Quiz</item>
+        <item>Mid</item>
+        <item>Final</item>
+    </string-array>
+
+
+</resources>

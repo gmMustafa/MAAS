@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/panelAdminColor"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add Teacher"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_above="@id/linearLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/teacher_first_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="First Name : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_first_name_tv"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:inputType="text"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_last_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Last Name : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/teacher_first_name"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_last_name_tv"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:inputType="text"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_city_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="City : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/teacher_last_name"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_city_tv"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:inputType="text"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_postal_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Postal Code : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/teacher_city"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_postal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_postal_tv"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:inputType="number"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Email : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/teacher_postal"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_email_tv"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:inputType="text"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_mobile_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Mobile No : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:layout_below="@id/teacher_email"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_mobile_tv"
+                android:inputType="number"
+                android:layout_alignLeft="@id/teacher_mobile_tv"
+                >
+            </EditText>
+
+            <TextView
+                android:id="@+id/teacher_gender_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Gender : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:layout_below="@id/teacher_mobile"
+                >
+            </TextView>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacher_gender_tv"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+
+            <TextView
+                android:id="@+id/teacher_username_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="User Name : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:layout_below="@id/spinner"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_username_tv"
+                android:inputType="text"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/teacher_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Password : "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                android:layout_below="@id/teacher_username"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/teacher_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/teacher_password_tv"
+                android:inputType="text"
+                android:layout_alignLeft="@id/teacher_first_name_tv"
+                >
+            </EditText>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_btn"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_btn"
+            android:text="Save"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

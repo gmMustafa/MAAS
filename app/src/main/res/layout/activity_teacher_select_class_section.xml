@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/panelTeacherColor"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Make Selection"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/select_class_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Class : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_below="@id/toolbar"
+        >
+    </TextView>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/select_class_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_class_tv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/select_class_tv"
+        >
+    </android.support.v7.widget.AppCompatSpinner>
+
+
+    <TextView
+        android:id="@+id/select_subject_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Subject : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_below="@id/select_class_spinner"
+        >
+    </TextView>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/select_subject_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_subject_tv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/select_class_tv"
+        >
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <TextView
+        android:id="@+id/select_section_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Section : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/toolbar"
+        android:layout_below="@id/select_subject_spinner"
+        >
+    </TextView>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/select_section_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_section_tv"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/select_section_tv"
+        >
+    </android.support.v7.widget.AppCompatSpinner>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/teacher_btn"
+        android:text="Show"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/show"
+
+        />
+
+</RelativeLayout>

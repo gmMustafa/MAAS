@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Notification"
+     android:textColor="#000000"
+     android:textSize="18sp"
+     android:id="@+id/notifyTV" />
+
+    <TextView
+        android:id="@+id/notifyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Show"
+        android:textStyle="bold"
+        android:textColor="#e9f107"
+        android:textSize="20sp"
+        tools:ignore="DuplicateIds,NotSibling" />
+
+    <View
+        android:layout_width="1dp"
+        android:background="#a4a2a2"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/notifyTV">
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/notifyTV"
+        android:layout_alignBottom="@+id/notifyTV"
+        android:layout_marginEnd="18dp"
+        android:textColor="#e9f107"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@+id/notifyTV"
+        android:text="Hide" />
+
+</RelativeLayout>

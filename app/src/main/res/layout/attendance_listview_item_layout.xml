@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendance_date"
+        android:background="@color/appToolbarColor"
+        android:padding="16dp"
+        android:layout_weight="0"
+        android:text="21-07-2018"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/panelStudentColor"
+        android:id="@+id/attendance_name"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/panelStudentColor"
+        android:id="@+id/attendance_status"
+        android:padding="16dp"
+        android:layout_weight="0"
+        android:text="Status"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+</LinearLayout>

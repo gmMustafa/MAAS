@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.activities.AttendanceActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/attendance_toolbar"
+        android:background="@color/panelAdminColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Attendance"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/attendance_calender"
+        android:layout_below="@+id/attendance_toolbar"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/attendance_class_spinner"
+        android:layout_below="@+id/attendance_calender"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:id="@+id/attendance_section_spinner"
+        android:layout_below="@+id/attendance_class_spinner"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:id="@+id/attendance_subject_spinner"
+        android:layout_below="@+id/attendance_section_spinner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendance_search_button"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@+id/attendance_subject_spinner"
+        android:background="@drawable/panel_admin_bg"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Search"
+        android:textSize="18sp"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"/>
+
+</RelativeLayout>
